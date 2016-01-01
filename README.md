@@ -28,8 +28,7 @@ If this is the first time, it might take a _long_ time.
 
 Once finished you can verify everything worked fine here:
 
-- <http://localhost:8080/app-dev.html>.
-- <http://localhost:8080/myForm.html>.
+- <http://localhost:8080/index-dev.html>.
 
 Organization:
 
