@@ -1,0 +1,10 @@
+#!/bin/sh
+
+set -e
+
+stack build --verbosity warn
+./copy-assets
+echo "Optimizing JS with closure"
+du -hc assets/js/{rts,lib,out,runmain}.js
+closure-compiler --compilation_level=ADVANCED_OPTIMIZATIONS assets/js/{rts,lib,out,runmain}.js > assets/js/app.min.js
+du -h assets/js/app.min.js

@@ -1,0 +1,50 @@
+name:                bug
+version:             0.1.0.0
+synopsis:            Initial project template from stack
+description:         Please see README.md
+homepage:            https://gitlab.com/yogsototh/bug/
+license:             BSD3
+license-file:        LICENSE
+author:              Yann Esposito
+maintainer:          yann.esposito@gmail.com
+copyright:           2015 Yann Esposito
+category:            Development
+build-type:          Simple
+-- extra-source-files:
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:   Bug.Servant
+  build-depends:       base >= 4.7 && < 5
+                     , time
+                     , aeson
+                     , servant >= 0.5
+                     , either
+                     , cassava
+                     , bytestring
+                     , attoparsec
+                     , vector
+                     , text
+                     , transformers
+  default-language:    Haskell2010
+
+executable service-exe
+  hs-source-dirs: app
+  main-is: Main.hs
+  default-language: Haskell2010
+  build-depends:
+                aeson
+              , base >= 4.7 && < 5
+              , either
+              , servant
+              , servant-client
+              , servant-server
+              , wai
+              , warp
+              , bug
+              , time
+              , text
+              , transformers
+              , bytestring
+              , TCache >= 0.12.0

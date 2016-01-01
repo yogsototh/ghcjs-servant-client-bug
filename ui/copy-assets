@@ -1,0 +1,11 @@
+#! /bin/sh
+
+set -e
+
+PREFIX=`stack path --dist-dir`
+PREFIX="$PREFIX/build/ui-output/ui-output.jsexe"
+for fic in rts lib out runmain; do
+  echo "Copying ${fic}..."
+  cp "$PREFIX/${fic}.js" assets/js/${fic}.js
+done
+echo "All copied!"

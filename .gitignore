@@ -1,0 +1,14 @@
+*.hi
+*.ho
+TAGS
+*.log
+*.profile
+/dist
+/cabal.config
+/.stack-work
+/.cabal-sandbox/
+/cabal.sandbox.config
+doc.html
+/docsets/
+ui/assets/js/interetLegaux.js
+.*.swp

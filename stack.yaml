@@ -1,0 +1,27 @@
+system-ghc: false 
+flags: {}
+packages:
+- '.'
+- '../servant/servant/'
+- '../servant/servant-blaze/'
+- '../servant/servant-cassava/'
+- '../servant/servant-client/'
+- '../servant/servant-docs/'
+- '../servant/servant-examples/'
+- '../servant/servant-foreign/'
+- '../servant/servant-js/'
+- '../servant/servant-lucid/'
+- '../servant/servant-mock/'
+- '../servant/servant-server/'
+extra-deps:
+- approximate-equality-1.1.0.2
+- type-level-natural-number-2.0
+- control-monad-omega-0.3.1
+- engine-io-wai-1.0.4
+- http-api-data-0.2.2
+resolver: lts-3.10
+# resolver: nightly-2015-10-08
+
+nix:
+    enable: false
+    packages: []
