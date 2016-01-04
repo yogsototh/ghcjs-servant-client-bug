@@ -19,7 +19,7 @@ library
   build-depends:       base >= 4.7 && < 5
                      , time
                      , aeson
-                     , servant >= 0.5
+                     , servant
                      , either
                      , cassava
                      , bytestring
